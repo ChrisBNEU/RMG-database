@@ -632,3 +632,16 @@ L1: Abstracting
             L4: *NH-N
 """
 )
+forbidden(
+    label = "HX",
+    group =
+"""
+1 *4 H u0 p0 c0 {2,S}
+2 *5 X u0 p0 c0 {1,S}
+""", 
+    shortDesc = u"""""",
+    longDesc =
+u"""
+single, surface-bound H atom can't extract other atoms in a single step
+""",
+)
