@@ -2,12 +2,11 @@
 # encoding: utf-8
 
 name = "Surface_Abstraction_Single_vdW/rules"
-shortDesc = u""
-longDesc = u"""
+shortDesc = ""
+longDesc = """
 A vdW species splitting, adsorbing to the surface, 
 and transferring a functional group to a single bonded surface species.
 """
-
 entry(
     index = 1,
     label = "Donating;Abstracting",
@@ -27,3 +26,17 @@ BEP values from "Combined DFT, Microkinetic, and Experimental Study of Ethanol S
 From Table 7 includes beta and alpha position. Pre-exponential coefficient is calculated from 1e13 s^-1 (standard guess from transition state theory) divided by 2.39e-9 mol cm^-2 (surface site density of Pt(111)
 """
 )
+
+entry(
+    index = 2,
+    label = "C-OH;*C=R",
+    kinetics = SurfaceArrheniusBEP(A=(1e+17,'cm^2/(mol*s)'), n=0, alpha=0.5, E0=(0,'kcal/mol')),
+    rank = 1,
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
+"""
+Rate rule generated for uncertainty
+""",
+)
+
+
