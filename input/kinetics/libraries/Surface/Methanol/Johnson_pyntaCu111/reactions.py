@@ -90,6 +90,7 @@ entry(
     facet = "111",
 )
 
+# added to training
 entry(
     index = 6,
     label = "OC[Pt] + X <=> CO[Pt] + X",
