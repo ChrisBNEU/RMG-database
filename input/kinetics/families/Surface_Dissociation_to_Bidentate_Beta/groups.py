@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Surface_Dissociation_to_Bidentate_bBeta/groups"
+name = "Surface_Dissociation_to_Bidentate_Beta/groups"
 shortDesc = u""
 longDesc = u"""
 A monodentate species becomes bidentate as H dissociates from it and both form a new bond with the surface instead.
