@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-name = "Surface_Migration_Rearrangement/groups"
+name = "Surface_Migration_Dual_Site/groups"
 shortDesc = u""
 longDesc = u"""
 Surface species migrating where it binds to the surface. dependent on 2 surface 
