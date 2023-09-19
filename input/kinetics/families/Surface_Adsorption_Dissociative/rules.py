@@ -163,6 +163,18 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""Universal BEP relation for all metals from Wang et al. "Universal transition state scaling relations for (de)hydrogenation over transition metals", Physical chemistry chemical physics, 2011, 13, 20760-20765, DOI:10.1039/c1cp20547a.
 Divided by 4 because of surface degeneracy for C2H4
+""",
+)
+
+entry(
+    index = 10,
+    label = "H2O;VacantSite1;VacantSite2",
+    kinetics = StickingCoefficientBEP(A=1.53304e-08, n=1.399, alpha=0.5, E0=(71532.3,'J/mol'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    rank = 0,
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
 """
+Rate rule generated for uncertainty
+""",
 )
 

@@ -68,39 +68,38 @@ entry(
     index = 4,
     label = "C-H;VacantSite",
     kinetics = SurfaceArrheniusBEP(
-        A = (4.18e17, 'm^2/(mol*s)'),
-        n = 0,
-        alpha =0.57,
-        E0 = (75.3, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+        A=(2.14202e+18,'m^2/(mol*s)'), 
+        n=-0.381, 
+        alpha=0.5, 
+        E0=(27169.3,'J/mol'), 
+        Tmin=(200,'K'), 
+        Tmax=(3000,'K')
     ),
     rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""
-E0 and alpha are taken from Table 5 for all metals from Sutton and Vlachos, "Ethanol Activation on closed-packed surfaces", Industrial & Engineering Chemistry Research, 2015, 54, 4213-4225, DOI: 10.1021/ie5043374.
-Pre-exponential coefficient is calculated from 1e13 s^-1 (standard guess from transition state theory) divided by 2.39e-9 mol cm^-2 (surface site density of Pt(111)
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
 """
+Rate rule generated for uncertainty
+""",
 )
-
 
 entry(
     index = 5,
     label = "O-H;VacantSite",
     kinetics = SurfaceArrheniusBEP(
-        A = (4.18e17, 'm^2/(mol*s)'),
-        n = 0,
-        alpha =0.26,
-        E0 = (73.3, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
+        A=(2.18659e+15,'m^2/(mol*s)'), 
+        n=0.638, 
+        alpha=0.5, 
+        E0=(166374,'J/mol'), 
+        Tmin=(200,'K'), 
+        Tmax=(3000,'K')
     ),
     rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""
-E0 and alpha are taken from Table 5 for all metals from Sutton and Vlachos, "Ethanol Activation on closed-packed surfaces", Industrial & Engineering Chemistry Research, 2015, 54, 4213-4225, DOI: 10.1021/ie5043374.
-Pre-exponential coefficient is calculated from 1e13 s^-1 (standard guess from transition state theory) divided by 2.39e-9 mol cm^-2 (surface site density of Pt(111)
-    """
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
+"""
+Rate rule generated for uncertainty
+""",
 )
 
 entry(

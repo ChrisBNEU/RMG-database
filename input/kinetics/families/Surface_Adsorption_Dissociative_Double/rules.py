@@ -22,3 +22,23 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""Made up"""
 )
+
+entry(
+    index = 2,
+    label = "CO2;VacantSite1;VacantSite2",
+    kinetics = StickingCoefficientBEP(
+        A=1.7265e-08, 
+        n=1.407, 
+        alpha=0.5, 
+        E0=(138983,'J/mol'), 
+        Tmin=(200,'K'), 
+        Tmax=(3000,'K')
+        ),
+    rank = 0,
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
+"""
+Rate rule generated for uncertainty
+""",
+)
+
