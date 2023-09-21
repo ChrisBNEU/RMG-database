@@ -118,6 +118,31 @@ multiplicity [1]
 )
 
 entry(
+    index = 9,
+    label="C=O",
+    group =
+"""
+multiplicity [1]
+1 *3 O   u0 p2 c0 {2,D}
+2 *4 C   u0 p0 c0 {1,D}
+""",
+    kinetics = None,
+)
+
+entry(
+    index = 10,
+    label="O=C=O",
+    group =
+"""
+multiplicity [1]
+1 *3 O   u0 p2 c0 {2,D}
+2 *4 C   u0 p0 c0 {1,D} {3,D}
+3    O   u0 p2 c0 {2,D}
+""",
+    kinetics = None,
+)
+
+entry(
     index = 8,
     label="C#C",
     group =
@@ -276,6 +301,8 @@ L1: Gas
     L2: R=R
         L3: C=C
             L4: CH2=CH2
+        L3: C=O
+            L4: O=C=O
     L2: R#R
         L3: C#C
             L4: HC#CH

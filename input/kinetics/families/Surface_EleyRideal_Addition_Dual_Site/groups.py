@@ -311,6 +311,7 @@ L1: Gas
     L2: R#R
         L3: C#C
             L4: HC#CH
+L1: VacantSite1
 """
 )
 

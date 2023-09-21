@@ -10,15 +10,18 @@ entry(
     index = 1,
     label = "Adsorbate1",
     kinetics = SurfaceArrheniusBEP(
-        A = (1.0e13, 's^-1'),
-        n = 0,
-        alpha = 0,
-        E0 = (50, 'kJ/mol'),
-        Tmin = (200, 'K'),
-        Tmax = (3000, 'K'),
-    ),
+        A=(1.992037e+15,'s^-1'),
+        n=-0.322, 
+        alpha=0.5, 
+        E0=(182137,'J/mol'), 
+        Tmin=(200,'K'), 
+        Tmax=(3000,'K')
+        ),
     rank = 0,
-    shortDesc = u"""Default""",
-    longDesc = u"""From Xu et al. Doi:10.1021/acscatal.7b03205 sort of,
-    but mostly made up -E"""
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
+"""
+R10 from table 1 in Pynta─An Automated Workflow for Calculation of Surface and Gas-Surface Kinetics Johnson et al. https://doi/full/10.1021/acs.jcim.3c00948
+multiply by copper surface site density to get similar rate (2.943e-05)
+""",
 )

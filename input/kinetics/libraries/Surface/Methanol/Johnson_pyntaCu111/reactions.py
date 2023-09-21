@@ -127,7 +127,7 @@ entry(
     index = 8,
     label = "[Pt] + [Pt]OCO[Pt] <=> OCO[Pt] + X  + X ",
     kinetics = SurfaceArrhenius(
-        A = (1.315e-07, 'm^4/(molecule^2*s)'),
+        A = (1.315e-07, 'm^2/(molecule*s)'),
         n = 0.265,
         Ea=(73.73, 'kJ/mol'),
         Tmin = (200, 'K'),
