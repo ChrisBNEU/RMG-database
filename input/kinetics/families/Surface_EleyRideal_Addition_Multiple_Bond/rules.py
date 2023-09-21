@@ -21,3 +21,15 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""E0 is Ea from Xu et al. Doi:10.1021/acscatal.7b03205"""
 )
+
+entry(
+    index = 2,
+    label = "*H;O=C=O",
+    kinetics = StickingCoefficientBEP(A=3.08123e-05, n=0.253, alpha=0.5, E0=(107800,'J/mol'), Tmin=(200,'K'), Tmax=(3000,'K')),
+    rank = 0,
+    shortDesc = """Rate rule generated for uncertainty""",
+    longDesc = 
+"""
+R13 from table 1 in Pynta─An Automated Workflow for Calculation of Surface and Gas-Surface Kinetics Johnson et al. https://doi/full/10.1021/acs.jcim.3c00948
+""",
+)

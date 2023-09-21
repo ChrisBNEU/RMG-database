@@ -62,10 +62,10 @@ entry(
     label="*C",
     group =
 """
-1 *1 X ux px cx {2,S}
-2 *2 C ux px cx {1,S} {3,[S,D]}
-3 *3 C ux px cx {2,[S,D]} {4,S}
-4 *4 R ux px cx {3,S}
+1 *1 X   ux px cx {2,S}
+2 *2 C   ux px cx {1,S} {3,[S,D]}
+3 *3 R!H ux px cx {2,[S,D]} {4,S}
+4 *4 R   ux px cx {3,S}
 """,
     kinetics = None,
 )
@@ -118,5 +118,6 @@ L1: Adsorbate1
         L3: *CC
         L3: *CO
             L4: *COH
+L1: VacantSite1
 """ 
 )

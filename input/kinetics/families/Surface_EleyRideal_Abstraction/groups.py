@@ -39,9 +39,9 @@ entry(
     label = "Adsorbate1",
     group =
 """
-1 *1 X  ux px cx {2,[S,D,T]}
-2 *2 R  ux px cx {1,[S,D,T]}, {3,S}
-3 *3 R  ux px cx {2,S}
+1 *1 X    ux px cx {2,[S,D,T]}
+2 *2 R!H  ux px c0 {1,[S,D,T]}, {3,S}
+3 *3 R    ux px c0 {2,S}
 """,
     kinetics = None,
 )
@@ -73,5 +73,6 @@ tree(
 """
 L1: Adsorbate1
 L1: Gas
+L1: VacantSite1
 """
 )
