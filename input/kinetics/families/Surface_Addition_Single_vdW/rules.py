@@ -22,3 +22,19 @@ entry(
     shortDesc = u"""Default""",
     longDesc = u"""Made up"""
 )
+
+entry(
+    index = 2,
+    label = "O=C;H*",
+    kinetics = SurfaceArrheniusBEP(
+        A = (1.0e13, 'm^2/(mol*s)'),
+        n = 0,
+        alpha = 0.5,
+        E0 = (5, 'kcal/mol'),
+        Tmin = (200, 'K'),
+        Tmax = (3000, 'K'),
+    ),
+    rank = 0,
+    shortDesc = u"""Default""",
+    longDesc = u"""Made up"""
+)
