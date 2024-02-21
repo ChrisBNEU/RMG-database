@@ -1,13 +1,6 @@
 #!/usr/bin/env python
 # encoding: utf-8
 
-
-# for now, focusing on adding in the normal, non=defect sites for 111 surfaces:
-# 111 top site
-# 111 bridge site
-# 111 fcc hollow site
-# 111 hcp hollow site
-
 name = "Metal Binding Energies"
 shortDesc = ""
 longDesc = """
@@ -118,7 +111,7 @@ bridge step edge on 553/111 step edge.
 entry(
     index = 7,
     label = "211_kink_bridge", 
-    facet = "211",
+    facet = "211_DEFECT",
     site = "211_kink_bridge",
     coordination_number = 4.39, 
     shortDesc = """211 kink bridge site""",
@@ -131,7 +124,7 @@ bridge kink site on 211 surface.
 entry(
     index = 8,
     label = "2AD_100T_bridge",
-    facet = "211",
+    facet = "211_DEFECT",
     site = "2AD_100T_bridge",
     coordination_number = 3.11, 
     shortDesc = """2AD@100T bridge""",
@@ -144,7 +137,7 @@ bridge site with 2 metal adatoms on 100 surface.
 entry(
     index = 9,
     label = "2AD_111T_bridge",
-    facet = "211",
+    facet = "211_DEFECT",
     site = "2AD_111T_bridge",
     coordination_number = 2.83, 
     shortDesc = """2AD@111T bridge""",
@@ -157,7 +150,7 @@ bridge site with 2 metal adatoms on 111 terrace surface.
 entry(
     index = 10,
     label = "2AD_100E_bridge",
-    facet = "211",
+    facet = "211_DEFECT",
     site = "2AD_100E_bridge",
     coordination_number = 1.44, 
     shortDesc = """2AD@100E bridge""",
@@ -288,7 +281,7 @@ top site at bottom of 553/111 step.
 entry(
     index = 20,
     label = "532_kink_top", 
-    facet = "532",
+    facet = "532_DEFECT",
     site = "532_kink_top",
     coordination_number = 4.75,
     shortDesc = """532 kink top""",
@@ -301,7 +294,7 @@ kink top site on 532 surface.
 entry(
     index = 21,
     label = "211_kink_top",
-    facet = "211",
+    facet = "211_DEFECT",
     site = "211_kink_top",
     coordination_number = 4.67,
     shortDesc = """211 kink top""",
@@ -314,7 +307,7 @@ kink top site on 211 surface.
 entry(
     index = 22,
     label = "2AD_100T_top",
-    facet = "100",
+    facet = "100_DEFECT",
     site = "2AD_100T_top",
     coordination_number = 3.58,
     shortDesc = """2AD@100T top""",
@@ -327,7 +320,7 @@ top site with 2 metal adatoms on 100 surface.
 entry(
     index = 23,
     label = "1AD_100T_top",
-    facet = "100",
+    facet = "100_DEFECT",
     site = "1AD_100T_top",
     coordination_number = 3.00,
     shortDesc = """1AD@100T top""",
@@ -340,7 +333,7 @@ top site with 1 metal adatom on 100 surface.
 entry(
     index = 24,
     label = "2AD_111T_top",
-    facet = "111",
+    facet = "111_DEFECT",
     site = "2AD_111T_top",
     coordination_number = 2.92,
     shortDesc = """2AD@111T top""",
@@ -353,7 +346,7 @@ top site with 2 metal adatoms on 111 surface.
 entry(
     index = 25,
     label = "1AD_111T_top",
-    facet = "111",
+    facet = "111_DEFECT",
     site = "1AD_111T_top",
     coordination_number = 2.50,
     shortDesc = """1AD@111T top""",
@@ -366,7 +359,7 @@ top site with 1 metal adatom on 111 surface.
 entry(
     index = 26,
     label = "2AD_211_top",
-    facet = "211",
+    facet = "211_DEFECT",
     site = "2AD_211_top",
     coordination_number = 1.67,
     shortDesc = """2AD@211 top""",
