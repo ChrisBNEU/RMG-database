@@ -28,7 +28,7 @@ entry(
     metal = "Sc",
     valence_electrons = 3,
     electronegativity = 1.36,
-    phi = 6.62,
+    psi =  6.62,
     beta = 1,
 )
 
@@ -38,7 +38,7 @@ entry(
     metal = "Ti",
     valence_electrons = 4,
     electronegativity = 1.54,
-    phi = 10.39,
+    psi =  10.39,
     beta = 1,
 )
 
@@ -48,7 +48,7 @@ entry(
     metal = "V",
     valence_electrons = 5,
     electronegativity = 1.63,
-    phi = 15.34,
+    psi =  15.34,
     beta = 1,
 )
 
@@ -58,7 +58,7 @@ entry(
     metal = "Cr",
     valence_electrons = 6,
     electronegativity = 1.66,
-    phi = 21.69,
+    psi =  21.69,
     beta = 1,
 )
 
@@ -68,7 +68,7 @@ entry(
     metal = "Mn",
     valence_electrons = 7,
     electronegativity = 1.55,
-    phi = 31.61,
+    psi =  31.61,
     beta = 1,
 )
 
@@ -78,7 +78,7 @@ entry(
     metal = "Fe",
     valence_electrons = 8,
     electronegativity = 1.83,
-    phi = 34.97,
+    psi =  34.97,
     beta = 1,
 )
 
@@ -88,7 +88,7 @@ entry(
     metal = "Co",
     valence_electrons = 9,
     electronegativity = 1.88,
-    phi = 43.09,
+    psi =  43.09,
     beta = 1,
 )
 
@@ -98,7 +98,7 @@ entry(
     metal = "Ni",
     valence_electrons = 10,
     electronegativity = 1.91,
-    phi = 52.36,
+    psi =  52.36,
     beta = 1,
 )
 
@@ -108,7 +108,7 @@ entry(
     metal = "Cu",
     valence_electrons = 11,
     electronegativity = 1.90,
-    phi = 63.68,
+    psi =  63.68,
     beta = 1,
 )
 
@@ -118,7 +118,7 @@ entry(
     metal = "Zn",
     valence_electrons = 12,
     electronegativity = 1.65,
-    phi = 87.27,
+    psi =  87.27,
     beta = 1,
 )
 
@@ -128,7 +128,7 @@ entry(
     metal = "Y",
     valence_electrons = 3,
     electronegativity = 1.22,
-    phi = 7.38,
+    psi =  7.38,
     beta = 1,
 )
 
@@ -138,7 +138,7 @@ entry(
     metal = "Zr",
     valence_electrons = 4,
     electronegativity = 1.33,
-    phi = 12.03,
+    psi =  12.03,
     beta = 1,
 )
 
@@ -148,7 +148,7 @@ entry(
     metal = "Nb",
     valence_electrons = 5,
     electronegativity = 1.60,
-    phi = 15.63,
+    psi =  15.63,
     beta = 1,
 )
 
@@ -158,7 +158,7 @@ entry(
     metal = "Mo",
     valence_electrons = 6,
     electronegativity = 1.16,
-    phi = 31.03,
+    psi =  31.03,
     beta = 1,
 )
 
@@ -168,7 +168,7 @@ entry(
     metal = "Tc",
     valence_electrons = 7,
     electronegativity = 1.90,
-    phi = 25.79,
+    psi =  25.79,
     beta = 1,
 )
 
@@ -178,7 +178,7 @@ entry(
     metal = "Ru",
     valence_electrons = 8,
     electronegativity = 2.20,
-    phi = 29.09,
+    psi =  29.09,
     beta = 1,
 )
 
@@ -188,7 +188,7 @@ entry(
     metal = "Rh",
     valence_electrons = 9,
     electronegativity = 2.28,
-    phi = 35.53,
+    psi =  35.53,
     beta = 1,
 )
 
@@ -198,7 +198,7 @@ entry(
     metal = "Pd",
     valence_electrons = 10,
     electronegativity = 2.20,
-    phi = 45.45,
+    psi =  45.45,
     beta = 1,
 )
 
@@ -208,7 +208,7 @@ entry(
     metal = "Ag",
     valence_electrons = 11,
     electronegativity = 1.93,
-    phi = 87.10,
+    psi =  87.10,
     beta = 1,
 )
 
@@ -218,7 +218,7 @@ entry(
     metal = "Cd",  
     valence_electrons = 12,
     electronegativity = 1.69,
-    phi = 85.21,
+    psi =  85.21,
     beta = 1,
 )
 
@@ -228,7 +228,7 @@ entry(
     metal = "La",
     valence_electrons = 3,
     electronegativity = 1.10,
-    phi = 8.18,
+    psi =  8.18,
     beta = 1,
 )
 
@@ -238,7 +238,7 @@ entry(
     metal = "Hf",
     valence_electrons = 4,
     electronegativity = 1.30,
-    phi = 12.31,
+    psi =  12.31,
     beta = 1,
 )
 
@@ -248,7 +248,7 @@ entry(
     metal = "Ta",
     valence_electrons = 5,
     electronegativity = 1.50,
-    phi = 16.67,
+    psi =  16.67,
     beta = 1,
 )
 
@@ -258,7 +258,7 @@ entry(
     metal = "W",
     valence_electrons = 6,
     electronegativity = 2.36,
-    phi = 15.25,
+    psi =  15.25,
     beta = 1,
 )
 
@@ -268,7 +268,7 @@ entry(
     metal = "Re",
     valence_electrons = 7,
     electronegativity = 1.90,
-    phi = 25.79,
+    psi =  25.79,
     beta = 1,
 )
 
@@ -278,7 +278,7 @@ entry(
     metal = "Os",
     valence_electrons = 8,
     electronegativity = 2.20,
-    phi = 29.09,
+    psi =  29.09,
     beta = 1,
 )
 
@@ -288,7 +288,7 @@ entry(
     metal = "Ir",
     valence_electrons = 9,
     electronegativity = 2.20,
-    phi = 36.82,
+    psi =  36.82,
     beta = 1,
 )
 
@@ -298,7 +298,7 @@ entry(
     metal = "Pt",
     valence_electrons = 10,
     electronegativity = 2.28,
-    phi = 43.86,
+    psi =  43.86,
     beta = 1,
 )
 
@@ -308,7 +308,7 @@ entry(
     metal = "Au",
     valence_electrons = 11,
     electronegativity = 2.54,
-    phi = 75.92,
+    psi =  75.92,
     beta = 1,
 )
 
@@ -318,6 +318,6 @@ entry(
     metal = "Hg",
     valence_electrons = 12,
     electronegativity = 2.00,
-    phi = 72,
+    psi =  72,
     beta = 1,
 )
