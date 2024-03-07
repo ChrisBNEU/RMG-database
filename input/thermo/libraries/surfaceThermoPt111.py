@@ -32,8 +32,9 @@ entry(
         Tmin = (298.0, 'K'),
         Tmax = (3000.0, 'K'),
     ),
-    metal = "Pt",
-    facet = "111",
+    metal="Pt",
+    facet="111",
+    site = "", 
 )
 
 entry(
@@ -59,8 +60,9 @@ entry(
             kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
             fmax=2.5e-2. DFT binding energy: -2.481 eV.
 """,
-    metal = "Pt",
-    facet = "111",
+    metal="Pt",
+    facet="111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -89,8 +91,9 @@ entry(
 
             The two lowest frequencies, 12.0 and 12.0 cm-1, where replaced by the 2D gas model.
 """,
-    metal = "Pt",
-    facet = "111",
+    metal="Pt",
+    facet="111",
+    site="111_top_vdw",
 )
 
 entry(
@@ -124,6 +127,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = "111_top_vdw",
 )
 
 entry(
@@ -154,6 +158,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_fcc_hollow",
 )
 
 entry(
@@ -188,6 +193,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = ""
 )
 
 entry(
@@ -219,6 +225,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = ""
 )
 
 entry(
@@ -252,6 +259,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site=""
 )
 
 entry(
@@ -281,6 +289,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -306,8 +315,9 @@ entry(
             Based on DFT calculations by Jelena Jelic at KIT.
             DFT binding energy: -0.698 eV.
             Linear scaling parameters: ref_adatom_O = -3.586 eV, psi = 1.09537 eV, gamma_O(X) = 0.500.""",
-    metal = "Pt",
-    facet = "111",
+    metal="Pt",
+    facet="111",
+    site = "", 
 )
 
 entry(
@@ -343,6 +353,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = "111_top",
 )
 
 entry(
@@ -373,6 +384,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "", 
 )
 
 
@@ -403,6 +415,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "111_bridge"
 )
 
 
@@ -432,6 +445,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "111_fcc_hollow",
 )
 
 
@@ -460,6 +474,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -493,6 +508,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 
@@ -525,6 +541,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 
@@ -556,6 +573,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 entry(
     index = 19,
@@ -583,6 +601,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -612,6 +631,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 
@@ -642,6 +662,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 
@@ -677,6 +698,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 
@@ -708,6 +730,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site = "",
 )
 
 entry(
@@ -738,6 +761,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="", 
 )
 
 
@@ -770,6 +794,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="", 
 )
 
 
@@ -800,6 +825,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -831,6 +857,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -862,6 +889,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -892,6 +920,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -924,6 +953,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -955,6 +985,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -987,6 +1018,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1049,6 +1081,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -1080,6 +1113,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1112,6 +1146,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1145,6 +1180,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_fcc_hollow",
 )
 
 entry(
@@ -1175,6 +1211,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -1208,6 +1245,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site={1:"111_bridge", 2:"111_bridge"},
 )
 
 entry(
@@ -1242,6 +1280,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1273,6 +1312,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1308,6 +1348,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site={1:"111_top", 2:"111_top"},
 )
 
 entry(
@@ -1340,6 +1381,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1378,6 +1420,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top_vdw",
 )
 
 entry(
@@ -1413,6 +1456,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1441,6 +1485,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1471,6 +1516,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1502,6 +1548,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1533,6 +1580,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1564,6 +1612,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1598,6 +1647,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1633,6 +1683,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1666,6 +1717,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -1698,6 +1750,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1733,6 +1786,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1768,6 +1822,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -1799,6 +1854,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1832,6 +1888,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1866,6 +1923,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -1901,6 +1959,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top_vdw",
 )
 
 entry(
@@ -1933,6 +1992,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2000,6 +2060,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2031,6 +2092,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -2062,6 +2124,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -2095,6 +2158,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -2127,6 +2191,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -2159,6 +2224,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -2191,6 +2257,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2223,6 +2290,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2257,6 +2325,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top",
 )
 
 entry(
@@ -2290,6 +2359,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2324,6 +2394,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2349,6 +2420,7 @@ entry(
     longDesc=u"""Based on DFT calculations by Bjarne Kreitz from Brown University. PAW DFT calculations were performed with Quantum Espresso using the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage) following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied: kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF', fmax=2.5e-2.DFT binding energy: -0.062 eV. The two lowest frequencies, 10.8 and 12.0 cm-1, where replaced by the 2D gas model. The heat of formation of CO2 was corrected by +0.41 eV since the BEEF-vdW functional overestimates the binding energy (see SI of DOI:10.1039/c0ee00071j)""",
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2381,6 +2453,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2416,6 +2489,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top_vdw",
 )
 
 entry(
@@ -2452,6 +2526,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2486,6 +2561,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2520,6 +2596,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2555,6 +2632,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2593,6 +2671,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2630,6 +2709,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top_vdw",
 )
 
 entry(
@@ -2668,6 +2748,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2707,6 +2788,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2743,6 +2825,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2781,6 +2864,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2819,6 +2903,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site={1:"111_top",2:"111_fcc_hollow",3:"111_top"},
 )
 
 entry(
@@ -2853,6 +2938,7 @@ entry(
         		The heat of formation of CO3 was corrected by +0.41 eV since the BEEF-vdW functional overestimates the binding energy (see SI of DOI:10.1039/c0ee00071j)""",
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2880,6 +2966,7 @@ entry(
     longDesc=u"""Calculated by Bjarne Kreitz at Brown University using statistical mechanics (file: ThermoPt111.py). Based on DFT calculations by Bjarne Kreitz from Brown University. PAW DFT calculations were performed with Quantum Espresso using the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage) following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF', fmax=2.5e-2. DFT binding energy: -2.365 eV. The heat of formation of HCO3 was corrected by +0.41 eV since the BEEF-vdW functional overestimates the binding energy (see SI of DOI:10.1039/c0ee00071j)""",
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2915,6 +3002,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2953,6 +3041,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -2990,6 +3079,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3024,6 +3114,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 
@@ -3063,6 +3154,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3098,6 +3190,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3132,6 +3225,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3168,6 +3262,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3204,6 +3299,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3238,6 +3334,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_hcp_hollow",
 )
 
 entry(
@@ -3269,6 +3366,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3308,6 +3406,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3347,6 +3446,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3385,6 +3485,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3422,6 +3523,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3456,6 +3558,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3495,6 +3598,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="",
 )
 
 entry(
@@ -3532,6 +3636,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_bridge",
 )
 
 entry(
@@ -3603,6 +3708,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3639,6 +3745,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3674,6 +3781,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -3709,6 +3817,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3743,6 +3852,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3776,6 +3886,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3808,6 +3919,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3844,6 +3956,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3879,6 +3992,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3910,6 +4024,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3944,6 +4059,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -3980,6 +4096,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4013,6 +4130,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4047,6 +4165,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4078,6 +4197,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4115,6 +4235,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4147,6 +4268,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -4182,6 +4304,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4215,6 +4338,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4250,6 +4374,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4286,6 +4411,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4318,6 +4444,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4352,6 +4479,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4382,6 +4510,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4417,6 +4546,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4449,6 +4579,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4482,6 +4613,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4517,6 +4649,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4551,6 +4684,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4585,6 +4719,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4618,6 +4753,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -4653,6 +4789,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4691,6 +4828,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -4724,6 +4862,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 
@@ -4756,6 +4895,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4788,6 +4928,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4821,6 +4962,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4853,6 +4995,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4888,6 +5031,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4922,6 +5066,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
 
 entry(
@@ -4956,4 +5101,5 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
+    site="",
 )
