@@ -353,7 +353,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site = "111_top",
+    site = "111_fcc_hollow",
 )
 
 entry(
@@ -1132,7 +1132,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site={1:"111_fcc_hollow", 2:"111_hcp_hollow"}, # may revisit, see how well this predicts be
 )
 
 entry(
@@ -1165,7 +1165,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_bridge", # this is technically a bidentate. first C is bridge site and second falls over and binds to a top site
 )
 
 entry(
@@ -1331,7 +1331,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_bridge",
 )
 
 entry(
@@ -1400,7 +1400,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -1475,7 +1475,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -1707,7 +1707,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -1739,7 +1739,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top_vdw",
 )
 
 
@@ -1811,7 +1811,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -1847,7 +1847,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="11_top",
 )
 
 entry(
@@ -2022,7 +2022,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site={1:"111_bridge", 2: "111_hcp_hollow"},
 )
 
 entry(
@@ -2056,6 +2056,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top"
 )
 
 entry(
@@ -2090,7 +2091,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_bridge",
 )
 
 entry(
@@ -2559,7 +2560,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -2704,7 +2705,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -2781,7 +2782,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -2821,7 +2822,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -2897,7 +2898,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3035,7 +3036,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -3187,7 +3188,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3223,7 +3224,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_fcc_hollow",
 )
 
 entry(
@@ -3258,7 +3259,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site={1:"111_top",2:"111_hcp_hollow"},
 )
 
 entry(
@@ -3332,7 +3333,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_fcc_hollow",
 )
 
 entry(
@@ -3399,7 +3400,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_hcp_hollow", # is this hcp? or was it specifically relaxed for hcp
 )
 
 entry(
@@ -3439,7 +3440,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3479,7 +3480,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -3518,7 +3519,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3556,7 +3557,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3707,6 +3708,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
+    site="111_top_vdw", 
 )
 
 entry(
@@ -3741,7 +3743,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -3778,7 +3780,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:""},
 )
 
 entry(
@@ -3814,7 +3816,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top_vdw",
 )
 
 
@@ -3850,7 +3852,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -3952,7 +3954,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"111_top", 2:"111_fcc_hollow"},
 )
 
 entry(
@@ -4092,7 +4094,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -4268,7 +4270,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
@@ -4337,7 +4339,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"111_bridge", 2:"111_top", 3:"111_bridge"},
 )
 
 entry(
@@ -4371,7 +4373,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"111_top", 2:"111_top"},
 )
 
 entry(
@@ -4477,7 +4479,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top",
 )
 
 entry(
@@ -4717,7 +4719,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"111_top", 2:"111_top"},
 )
 
 entry(
@@ -4895,7 +4897,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"111_fcc_hollow", 2:"111_top", 3:"111_fcc_hollow"},
 )
 
 
@@ -4961,7 +4963,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site={1:"", 2:"", 3:""},
 )
 
 entry(
@@ -5064,7 +5066,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="",
+    site="111_top_vdw",
 )
 
 entry(
