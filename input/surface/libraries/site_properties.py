@@ -21,6 +21,7 @@ entry(
     facet = "111",
     site = "111_fcc_hollow",
     coordination_number = 6.955,
+    metal_atoms = 3,
     shortDesc = """111 fcc hollow""",
     longDesc = 
 """
@@ -34,6 +35,7 @@ entry(
     facet = "111",
     site = "111_hcp_hollow",
     coordination_number = 7.5,
+    metal_atoms = 3,
     shortDesc = """111 hcp hollow""",
     longDesc = 
 """
@@ -47,6 +49,7 @@ entry(
     facet = "100",
     site = "100_hollow",
     coordination_number = 6.62,
+    metal_atoms = 4,
     shortDesc = """100 hollow""",
     longDesc = 
 """
@@ -54,13 +57,14 @@ entry(
 """,
 )
 
-# Sites: bridge
+# Sites: bridge (bridge sites have 2 metal atoms)
 entry(
     index = 3,
     label = "111_bridge",
     facet = "111",
     site = "111_bridge",
     coordination_number =7.33,
+    metal_atoms = 2,
     shortDesc = """111 bridge""",
     longDesc = 
 """
@@ -74,6 +78,7 @@ entry(
     facet = "100",
     site = "100_bridge",
     coordination_number =6.67,
+    metal_atoms = 2,
     shortDesc = """100 bridge""",
     longDesc = 
 """
@@ -87,6 +92,7 @@ entry(
     facet = "211",
     site = "211_100_edge_bridge",
     coordination_number =5.39,
+    metal_atoms = 2,
     shortDesc = """211/100 step edge bridge""",
     longDesc = 
 """
@@ -101,6 +107,7 @@ entry(
     facet = "553",
     site = "553_111_edge_bridge",
     coordination_number = 5.44,
+    metal_atoms = 2,
     shortDesc = """553/111 bridge step edge""",
     longDesc = 
 """
@@ -114,6 +121,7 @@ entry(
     facet = "211_DEFECT",
     site = "211_kink_bridge",
     coordination_number = 4.39, 
+    metal_atoms = 2,
     shortDesc = """211 kink bridge site""",
     longDesc =
 """
@@ -127,6 +135,7 @@ entry(
     facet = "211_DEFECT",
     site = "2AD_100T_bridge",
     coordination_number = 3.11, 
+    metal_atoms = 2,
     shortDesc = """2AD@100T bridge""",
     longDesc =
 """
@@ -140,6 +149,7 @@ entry(
     facet = "211_DEFECT",
     site = "2AD_111T_bridge",
     coordination_number = 2.83, 
+    metal_atoms = 2,
     shortDesc = """2AD@111T bridge""",
     longDesc =
 """
@@ -153,6 +163,7 @@ entry(
     facet = "211_DEFECT",
     site = "2AD_100E_bridge",
     coordination_number = 1.44, 
+    metal_atoms = 2,
     shortDesc = """2AD@100E bridge""",
     longDesc =
 """
@@ -160,13 +171,14 @@ bridge site with 2 metal adatoms on 100 edge surface.
 """,
 )
 
-# Sites: top
+# Sites: top (top sites only have 1 metal atom)
 entry(
     index = 11,
     label = "532_111_edge_top", 
     facet = "532",
     site = "532_111_edge_top",
     coordination_number = 9.58, 
+    metal_atoms = 1,
     shortDesc = """532/111 top step edge""",
     longDesc =
 """
@@ -180,6 +192,7 @@ entry(
     facet = "553",
     site = "553_111_edge_top",
     coordination_number = 9.50,
+    metal_atoms = 1,
     shortDesc = """553/111 top step edge""",
     longDesc =
 """
@@ -193,6 +206,7 @@ entry(
     facet = "211",
     site = "211_100_edge_top",
     coordination_number = 8.75, 
+    metal_atoms = 1,
     shortDesc = """211/100 top step edge""",
     longDesc =
 """
@@ -206,6 +220,7 @@ entry(
     facet = "532",
     site = "532_100_edge_top",
     coordination_number = 8.42,
+    metal_atoms = 1,
     shortDesc = """532/100 top step edge""",
     longDesc =
 """
@@ -219,6 +234,7 @@ entry(
     facet = "111",
     site = "111_top",
     coordination_number = 7.5,
+    metal_atoms = 1,
     shortDesc = """111 top""",
     longDesc =
 """
@@ -232,6 +248,7 @@ entry(
     facet = "100",
     site = "100_top",
     coordination_number = 6.67,
+    metal_atoms = 1,
     shortDesc = """100 top""",
     longDesc =
 """
@@ -245,6 +262,7 @@ entry(
     facet = "110",
     site = "110_top",
     coordination_number = 5.83,
+    metal_atoms = 1,
     shortDesc = """110 top""",
     longDesc =
 """
@@ -258,6 +276,7 @@ entry(
     facet = "211",
     site = "211_100_edge_top",
     coordination_number = 5.58,
+    metal_atoms = 1,
     shortDesc = """211/100 top step edge""",
     longDesc =
 """
@@ -271,6 +290,7 @@ entry(
     facet = "553",
     site = "553_111_edge_top",
     coordination_number = 5.50,
+    metal_atoms = 1,
     shortDesc = """553/111 top step edge""",
     longDesc =
 """
@@ -284,6 +304,7 @@ entry(
     facet = "532_DEFECT",
     site = "532_kink_top",
     coordination_number = 4.75,
+    metal_atoms = 1,
     shortDesc = """532 kink top""",
     longDesc =
 """
@@ -297,6 +318,7 @@ entry(
     facet = "211_DEFECT",
     site = "211_kink_top",
     coordination_number = 4.67,
+    metal_atoms = 1,
     shortDesc = """211 kink top""",
     longDesc =
 """
@@ -310,6 +332,7 @@ entry(
     facet = "100_DEFECT",
     site = "2AD_100T_top",
     coordination_number = 3.58,
+    metal_atoms = 1,
     shortDesc = """2AD@100T top""",
     longDesc =
 """
@@ -323,6 +346,7 @@ entry(
     facet = "100_DEFECT",
     site = "1AD_100T_top",
     coordination_number = 3.00,
+    metal_atoms = 1,
     shortDesc = """1AD@100T top""",
     longDesc =
 """
@@ -336,6 +360,7 @@ entry(
     facet = "111_DEFECT",
     site = "2AD_111T_top",
     coordination_number = 2.92,
+    metal_atoms = 1,
     shortDesc = """2AD@111T top""",
     longDesc =
 """
@@ -349,6 +374,7 @@ entry(
     facet = "111_DEFECT",
     site = "1AD_111T_top",
     coordination_number = 2.50,
+    metal_atoms = 1,
     shortDesc = """1AD@111T top""",
     longDesc =
 """
@@ -362,6 +388,7 @@ entry(
     facet = "211_DEFECT",
     site = "2AD_211_top",
     coordination_number = 1.67,
+    metal_atoms = 1,
     shortDesc = """2AD@211 top""",
     longDesc =
 """

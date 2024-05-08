@@ -1132,7 +1132,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_fcc_hollow", 2:"111_hcp_hollow"}, # may revisit, see how well this predicts be
+    site={1:('C',"111_fcc_hollow"), 2:('C',"111_hcp_hollow")}, # may revisit, see how well this predicts
 )
 
 entry(
@@ -1264,7 +1264,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_bridge", 2:"111_bridge"},
+    site={1:('C'"111_bridge"), 2:('C',"111_bridge")},
 )
 
 entry(
@@ -1367,7 +1367,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_top", 2:"111_top"},
+    site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -2022,7 +2022,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_bridge", 2: "111_hcp_hollow"},
+    site={1:('C',"111_bridge"), 2: ('C',"111_hcp_hollow")},
 )
 
 entry(
@@ -2937,7 +2937,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_top",2:"111_fcc_hollow",3:"111_top"},
+    site={1:('C',"111_top"),2:('C',"111_fcc_hollow"),3:('C',"111_top")},
 )
 
 entry(
@@ -3259,7 +3259,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:"111_top",2:"111_hcp_hollow"},
+    site={1:('C',"111_top"),2:('C',"111_hcp_hollow")},
 )
 
 entry(
@@ -3780,7 +3780,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:""},
+    site="",
 )
 
 entry(
@@ -3954,7 +3954,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"111_top", 2:"111_fcc_hollow"},
+    site={1:('C',"111_top"), 2:('C',"111_fcc_hollow")},
 )
 
 entry(
@@ -4339,7 +4339,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"111_bridge", 2:"111_top", 3:"111_bridge"},
+    site={1:('C',"111_bridge"), 2:('C',"111_top"), 3:('C',"111_bridge")},
 )
 
 entry(
@@ -4373,7 +4373,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"111_top", 2:"111_top"},
+    site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -4719,7 +4719,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"111_top", 2:"111_top"},
+    site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -4897,7 +4897,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"111_fcc_hollow", 2:"111_top", 3:"111_fcc_hollow"},
+    site={1:('C',"111_fcc_hollow"), 2:('C',"111_top"), 3:('C',"111_fcc_hollow")},
 )
 
 
@@ -4963,7 +4963,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:"", 2:"", 3:""},
+    site="",
 )
 
 entry(
