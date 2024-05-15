@@ -97,24 +97,5 @@ L1: R*
                 L5: O-*NR2
                 L5: O-*OR
     L2: R*vdW
-        L3: (CR4)*
-            L4: (CR3CR3)*
-            L4: (CR3NR2)*
-            L4: (CR3OR)*
-        L3: (CR3)*
-            L4: (CR2NR)*
-            L4: (CR2CR)*
-            L4: (CR2O)*
-        L3: (CR2)*
-            L4: (CRN)*
-            L4: (CRCR)*
-        L3: (NR3)*
-            L4: (NR2NR2)*
-            L4: (NR2OR)*
-        L3: (N=[O,N]R)*
-            L4: (NRO)*
-            L4: (NRNR)*
-        L3: (OR2)*
-            L4: (OROR)*
 """,
 )
