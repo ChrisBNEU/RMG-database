@@ -57,6 +57,43 @@ entry(
 """,
 )
 
+entry(
+    index = 2,
+    label = "211_hollow",
+    facet = "211",
+    site = "211_hollow",
+    coordination_number = 5.91,
+    metal_atoms = 3,
+    shortDesc = """211 hollow""",
+    longDesc = 
+"""
+211 surface edge hollow site.
+2 atoms w/ cn 7
+4 atoms w/ cn 9
+2 atoms w/ cn 10
+5 atoms w/ cn 12
+""",
+)
+
+entry(
+    index = 2,
+    label = "211_100_hollow",
+    facet = "211",
+    site = "211_100_hollow",
+    coordination_number = 5.69,
+    metal_atoms = 4,
+    shortDesc = """211 hollow""",
+    longDesc = 
+"""
+211 surface edge hollow site, on downward side of step (exposed 100 face). fourfold
+2 atoms w/ cn 7
+6 atoms w/ cn 9
+2 atoms w/ cn 10
+5 atoms w/ cn 12
+100 fourfold site has max NN of 26
+""",
+)
+
 # Sites: bridge (bridge sites have 2 metal atoms)
 entry(
     index = 3,
@@ -186,33 +223,33 @@ top step site at bottom of 532/111 step.
 """,
 )
 
-entry(
-    index = 12,
-    label = "553_111_edge_top",
-    facet = "553",
-    site = "553_111_edge_top",
-    coordination_number = 9.50,
-    metal_atoms = 1,
-    shortDesc = """553/111 top step edge""",
-    longDesc =
-"""
-top site at bottom of 553/111 step.
-""",
-)
+# entry(
+#     index = 12,
+#     label = "553_111_edge_top",
+#     facet = "553",
+#     site = "553_111_edge_top",
+#     coordination_number = 9.50,
+#     metal_atoms = 1,
+#     shortDesc = """553/111 top step edge""",
+#     longDesc =
+# """
+# top site at bottom of 553/111 step.
+# """,
+# )
 
-entry(
-    index = 13,
-    label = "211_100_edge_top",
-    facet = "211",
-    site = "211_100_edge_top",
-    coordination_number = 8.75, 
-    metal_atoms = 1,
-    shortDesc = """211/100 top step edge""",
-    longDesc =
-"""
-top site at bottom of 211/100 step.
-""",
-)
+# entry(
+#     index = 13,
+#     label = "211_100_edge_top",
+#     facet = "211",
+#     site = "211_100_edge_top",
+#     coordination_number = 8.75, 
+#     metal_atoms = 1,
+#     shortDesc = """211/100 top step edge""",
+#     longDesc =
+# """
+# top site at bottom of 211/100 step.
+# """,
+# )
 
 entry(
     index = 14,
