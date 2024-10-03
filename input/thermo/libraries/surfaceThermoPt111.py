@@ -42,7 +42,7 @@ entry(
     label = "XH",
     molecule =
 """
-1 X  u0 p0 c0 {2,S}
+1 X  u0 p0 c0 s"111_fcc_hollow" {2,S}
 2 H  u0 p0 c0 {1,S}
 """,
     thermo = NASA(
@@ -70,7 +70,7 @@ entry(
     label = "H2X",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw" 
 2 H  u0 p0 c0 {3,S}
 3 H  u0 p0 c0 {2,S}
 """,
@@ -93,7 +93,7 @@ entry(
 """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -136,7 +136,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,S}
-2 O  u0 p2 c0 {1,S} {3,S}
+2 O  u0 p2 c0 s"111_fcc_hollow" {1,S} {3,S}
 3 H  u0 p0 c0 {2,S}
 """,
     thermo=NASA(
@@ -158,7 +158,6 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_fcc_hollow",
 )
 
 entry(
@@ -166,7 +165,7 @@ entry(
     label = "HOOHX",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 O  u0 p2 c0 {3,S} {4,S}
 3 O  u0 p2 c0 {2,S} {5,S}
 4 H  u0 p0 c0 {2,S}
@@ -193,7 +192,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site = ""
+    # site = ""
 )
 
 entry(
@@ -1110,8 +1109,8 @@ entry(
 """
 1 X  u0  p0 c0 {3,D}
 2 X  u0  p0 c0 {4,D}
-3 C  u0  p0 c0 {1,D} {4,D}
-4 C  u0  p0 c0 {2,D} {3,D}
+3 C  u0  p0 c0 s"111_fcc_hollow" {1,D} {4,D}
+4 C  u0  p0 c0 s"111_hcp_hollow" {2,D} {3,D}
 """,
     thermo=NASA(
         polynomials=[
@@ -1132,7 +1131,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C',"111_fcc_hollow"), 2:('C',"111_hcp_hollow")}, # may revisit, see how well this predicts
+    # site={1:('C',"111_fcc_hollow"), 2:('C',"111_hcp_hollow")}, # may revisit, see how well this predicts
 )
 
 entry(
@@ -1141,7 +1140,7 @@ entry(
     molecule =
 """
 1 X  u0  p0 c0 {2,D}
-2 C  u0  p0 c0 {1,D} {3,D}
+2 C  u0  p0 c0 s"111_bridge" {1,D} {3,D}
 3 C  u0  p0 c0 {2,D} {4,S} {5,S}
 4 H  u0  p0 c0 {3,S}
 5 H  u0  p0 c0 {3,S}
@@ -1165,7 +1164,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_bridge", # this is technically a bidentate. first C is bridge site and second falls over and binds to a top site
+    # site="111_bridge", # this is technically a bidentate. first C is bridge site and second falls over and binds to a top site
 )
 
 entry(
@@ -1175,7 +1174,7 @@ entry(
 """
 1 X  u0 p0 c0 {3,T}
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C  u0 p0 c0 {1,T} {2,S}
+3 C  u0 p0 c0 s"111_fcc_hollow" {1,T} {2,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {2,S}
 6 H  u0 p0 c0 {2,S}
@@ -1199,7 +1198,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_fcc_hollow",
+    # site="111_fcc_hollow",
 )
 
 entry(
@@ -1240,8 +1239,8 @@ entry(
 """
 1 X  u0 p0 c0 {3,D}
 2 X  u0 p0 c0 {4,D}
-3 C  u0 p0 c0 {1,D} {4,S} {5,S}
-4 C  u0 p0 c0 {2,D} {3,S} {6,S}
+3 C  u0 p0 c0 s"111_bridge" {1,D} {4,S} {5,S}
+4 C  u0 p0 c0 s"111_bridge" {2,D} {3,S} {6,S}
 5 H  u0 p0 c0 {3,S}
 6 H  u0 p0 c0 {4,S}
 """,
@@ -1264,7 +1263,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C'"111_bridge"), 2:('C',"111_bridge")},
+    # site={1:('C'"111_bridge"), 2:('C',"111_bridge")},
 )
 
 entry(
@@ -1308,7 +1307,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,D}
-2 C  u0 p0 c0 {1,D} {3,S} {4,S}
+2 C  u0 p0 c0 s"111_bridge" {1,D} {3,S} {4,S}
 3 H  u0 p0 c0 {2,S}
 4 H  u0 p0 c0 {2,S}
 """,
@@ -1331,7 +1330,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_bridge",
+    # site="111_bridge",
 )
 
 entry(
@@ -1341,8 +1340,8 @@ entry(
 """
 1 X  u0 p0 c0 {3,S}
 2 X  u0 p0 c0 {4,S}
-3 C  u0 p0 c0 {1,S} {4,S} {5,S} {6,S}
-4 C  u0 p0 c0 {2,S} {3,S} {7,S} {8,S}
+3 C  u0 p0 c0 s"111_top" {1,S} {4,S} {5,S} {6,S}
+4 C  u0 p0 c0 s"111_top" {2,S} {3,S} {7,S} {8,S}
 5 H  u0 p0 c0 {3,S}
 6 H  u0 p0 c0 {3,S}
 7 H  u0 p0 c0 {4,S}
@@ -1367,7 +1366,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C',"111_top"), 2:('C',"111_top")},
+    # site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -1376,7 +1375,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,S}
-2 C  u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+2 C  u0 p0 c0 s"111_top" {1,S} {3,S} {4,S} {5,S}
 3 H  u0 p0 c0 {2,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {2,S}
@@ -1400,7 +1399,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -1408,7 +1407,7 @@ entry(
     label = "CH3CH3X",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C  u0 p0 c0 {2,S} {7,S} {8,S} {9,S}
 4 H  u0 p0 c0 {2,S}
@@ -1439,7 +1438,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -1447,7 +1446,7 @@ entry(
     label = "CH4X",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 H  u0 p0 c0 {2,S}
 4 H  u0 p0 c0 {2,S}
@@ -1475,7 +1474,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -1680,7 +1679,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,S}
-2 C  u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+2 C  u0 p0 c0 s"111_top" {1,S} {3,S} {4,S} {5,S}
 3 C  u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {2,S}
@@ -1707,7 +1706,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -1715,7 +1714,7 @@ entry(
     label = "CH2NHX",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 C  u0 p0 c0 {3,D} {4,S} {5,S}
 3 N  u0 p1 c0 {2,D} {6,S}
 4 H  u0 p0 c0 {2,S}
@@ -1739,7 +1738,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 
@@ -1784,7 +1783,7 @@ entry(
     label = "CH2OX",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 C  u0 p0 c0 {3,D} {4,S} {5,S}
 3 O  u0 p2 c0 {2,D}
 4 H  u0 p0 c0 {2,S}
@@ -1811,7 +1810,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -1820,7 +1819,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,S}
-2 C  u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
+2 C  u0 p0 c0 s"111_top" {1,S} {3,S} {4,S} {5,S}
 3 O  u0 p2 c0 {2,S} {6,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {2,S}
@@ -1847,7 +1846,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="11_top",
+    # site="111_top",
 )
 
 entry(
@@ -1962,7 +1961,7 @@ entry(
     label = "CH3OHX",
     molecule =
 """
-1 X  u0 p0 c0
+1 X  u0 p0 c0 s"111_top_vdw"
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 O  u0 p2 c0 {2,S} {7,S}
 4 H  u0 p0 c0 {2,S}
@@ -1989,7 +1988,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -1999,8 +1998,8 @@ entry(
 """
 1 X  u0  p0 c0 {3,S}
 2 X  u0  p0 c0 {4,D}
-3 C  u0  p0 c0 {1,S} {4,D} {5,S}
-4 C  u0  p0 c0 {2,D} {3,D}
+3 C  u0  p0 c0 s"111_bridge" {1,S} {4,D} {5,S}
+4 C  u0  p0 c0 s"111_hcp_hollow" {2,D} {3,D}
 5 H  u0  p0 c0 {3,S}
 """,
     thermo=NASA(
@@ -2022,7 +2021,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C',"111_bridge"), 2: ('C',"111_hcp_hollow")},
+    # site={1:('C',"111_bridge"), 2: ('C',"111_hcp_hollow")},
 )
 
 entry(
@@ -2031,7 +2030,7 @@ entry(
     molecule =
 """
 1 X  u0  p0 c0 {2,S}
-2 C  u0  p0 c0 {1,S} {3,D} {4,S}
+2 C  u0  p0 c0 s"111_top" {1,S} {3,D} {4,S}
 3 C  u0  p0 c0 {2,D} {5,S} {6,S}
 4 H  u0  p0 c0 {2,S}
 5 H  u0  p0 c0 {3,S}
@@ -2056,7 +2055,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top"
+    # site="111_top"
 )
 
 entry(
@@ -2066,7 +2065,7 @@ entry(
 """
 1 X  u0 p0 c0 {3,D}
 2 C  u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C  u0 p0 c0 {1,D} {2,S} {7,S}
+3 C  u0 p0 c0 s"111_bridge" {1,D} {2,S} {7,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {2,S}
 6 H  u0 p0 c0 {2,S}
@@ -2091,7 +2090,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_bridge",
+    # site="111_bridge",
 )
 
 entry(
@@ -2333,7 +2332,7 @@ entry(
     molecule =
 """
 1 X  u0 p0 c0 {2,D}
-2 C  u0 p0 c0 {1,D} {3,S} {4,S}
+2 C  u0 p0 c0 s"111_top" {1,D} {3,S} {4,S}
 3 O  u0 p2 c0 {2,S} {5,S}
 4 H  u0 p0 c0 {2,S}
 5 H  u0 p0 c0 {3,S}
@@ -2359,7 +2358,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -2463,7 +2462,7 @@ entry(
     molecule =
 """
 1 O u0 p2 c0 {3,D}
-2 O u0 p2 c0 {3,S} {5,S}
+2 O u0 p2 c0 s"111_top" {3,S} {5,S}
 3 C u0 p0 c0 {1,D} {2,S} {4,S}
 4 H u0 p0 c0 {3,S}
 5 X u0 p0 c0 {2,S}
@@ -2483,7 +2482,7 @@ entry(
                 using PAW pseudopotentials and the BEEF-vdW functional for an optimized 3x3 supercell (1/9ML coverage)
                 following the procedure outlined by Blondal et al (DOI:10.1021/acs.iecr.9b01464). The following settings were applied:
                 kpoints=(5x5x1), 4 layers (2 bottom layers fixed), ecutwfc=60 Ry, smearing='mazari-vanderbilt', mixing_mode='local-TF',
-                fmax=2.5e-2. DFT binding energy: -1.902 eV.
+                fmax=2.5e-2. DFT binding energy: -1.902 eV. 
     """,
     metal="Pt",
     facet="111",
@@ -2500,7 +2499,7 @@ entry(
 3 C u0 p0 c0 {1,D} {2,D}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
-6 X u0 p0 c0
+6 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -2523,7 +2522,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -2533,7 +2532,7 @@ entry(
 """
 1 O u0 p2 c0 {3,D}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,D} {2,S} {7,S}
+3 C u0 p0 c0 s"111_top" {1,D} {2,S} {7,S}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
@@ -2560,7 +2559,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -2676,7 +2675,7 @@ entry(
 """
 1 C u0 p0 c0 {2,S} {4,S} {5,S} {6,S}
 2 C u0 p0 c0 {1,S} {3,D} {7,S}
-3 C u0 p0 c0 {2,D} {8,S} {9,S}
+3 C u0 p0 c0 s"111_top" {2,D} {8,S} {9,S}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {1,S}
@@ -2705,7 +2704,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -2722,7 +2721,7 @@ entry(
 7 H u0 p0 c0 {2,S}
 8 H u0 p0 c0 {3,S}
 9 H u0 p0 c0 {3,S}
-10 X u0 p0 c0
+10 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -2743,7 +2742,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -2752,7 +2751,7 @@ entry(
     molecule =
 """
 1 C u0 p0 c0 {2,S} {3,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {6,S} {7,S} {11,S}
+2 C u0 p0 c0 s"111_top" {1,S} {6,S} {7,S} {11,S}
 3 C u0 p0 c0 {1,S} {8,S} {9,S} {10,S}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
@@ -2782,7 +2781,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -2801,7 +2800,7 @@ entry(
 9 H u0 p0 c0 {3,S}
 10 H u0 p0 c0 {3,S}
 11 H u0 p0 c0 {3,S}
-12 X u0 p0 c0
+12 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -2822,7 +2821,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -2867,7 +2866,7 @@ entry(
     label = "CH3XCHCH3",
     molecule =
 """
-1 C u0 p0 c0 {2,S} {3,S} {4,S} {11,S}
+1 C u0 p0 c0 s"111_top" {2,S} {3,S} {4,S} {11,S}
 2 C u0 p0 c0 {1,S} {5,S} {6,S} {7,S}
 3 C u0 p0 c0 {1,S} {8,S} {9,S} {10,S}
 4 H u0 p0 c0 {1,S}
@@ -2898,7 +2897,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -2906,9 +2905,9 @@ entry(
     label = "XCH2XCHXCH2",
     molecule =
 """
-1  C u0 p0 c0 {2,S} {4,S} {5,S} {9,S}
-2  C u0 p0 c0 {1,S} {3,S} {6,S} {10,S}
-3  C u0 p0 c0 {2,S} {7,S} {8,S} {11,S}
+1  C u0 p0 c0 s"111_top" {2,S} {4,S} {5,S} {9,S}
+2  C u0 p0 c0 s"111_fcc_hollow" {1,S} {3,S} {6,S} {10,S}
+3  C u0 p0 c0 s"111_top" {2,S} {7,S} {8,S} {11,S}
 4  H u0 p0 c0 {1,S}
 5  H u0 p0 c0 {1,S}
 6  H u0 p0 c0 {2,S}
@@ -2937,7 +2936,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C',"111_top"),2:('C',"111_fcc_hollow"),3:('C',"111_top")},
+    # site={1:('C',"111_top"),2:('C',"111_fcc_hollow"),3:('C',"111_top")},
 )
 
 entry(
@@ -3013,7 +3012,7 @@ entry(
 3 C u0 p0 c0 {1,S} {2,D} {4,S}
 4 H u0 p0 c0 {3,S}
 5 H u0 p0 c0 {1,S}
-6 X u0 p0 c0
+6 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -3036,7 +3035,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -3157,7 +3156,7 @@ entry(
     label = "XOCH2CH3",
     molecule =
 """
-1 O u0 p2 c0 {2,S} {9,S}
+1 O u0 p2 c0 s"111_top" {2,S} {9,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
 3 C u0 p0 c0 {2,S} {6,S} {7,S} {8,S}
 4 H u0 p0 c0 {2,S}
@@ -3188,7 +3187,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -3198,7 +3197,7 @@ entry(
 """
 1 C u0 p0 c0 {2,D} {4,S} {5,S}
 2 C u0 p0 c0 {1,D} {3,D}
-3 C u0 p0 c0 {2,D} {6,D}
+3 C u0 p0 c0 s"111_fcc_hollow" {2,D} {6,D}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0 {3,D}
@@ -3224,7 +3223,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_fcc_hollow",
+    # site="111_fcc_hollow",
 )
 
 entry(
@@ -3233,8 +3232,8 @@ entry(
     molecule =
 """
 1 C u0 p0 c0 {2,D} {4,S} {5,S}
-2 C u0 p0 c0 {1,D} {3,S} {6,S}
-3 C u0 p0 c0 {2,S} {7,T}
+2 C u0 p0 c0 s"111_top" {1,D} {3,S} {6,S}
+3 C u0 p0 c0 s"111_hcp_hollow" {2,S} {7,T}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 6 X u0 p0 c0 {2,S}
@@ -3259,7 +3258,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site={1:('C',"111_top"),2:('C',"111_hcp_hollow")},
+    # site={1:('C',"111_top"),2:('C',"111_hcp_hollow")},
 )
 
 entry(
@@ -3306,7 +3305,7 @@ entry(
 """
 1 O u0 p2 c0 {2,S} {6,S}
 2 C u0 p0 c0 {1,S} {3,S} {4,S} {5,S}
-3 C u0 p0 c0 {2,S} {7,T}
+3 C u0 p0 c0 s"111_fcc_hollow" {2,S} {7,T}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {1,S}
@@ -3333,7 +3332,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_fcc_hollow",
+    # site="111_fcc_hollow",
 )
 
 entry(
@@ -3343,7 +3342,7 @@ entry(
 """
 1 O u0 p2 c0 {2,D}
 2 C u0 p0 c0 {1,D} {3,S} {4,S}
-3 C u0 p0 c0 {2,S} {5,T}
+3 C u0 p0 c0 s"111_hcp_hollow" {2,S} {5,T}
 4 H u0 p0 c0 {2,S}
 5 X u0 p0 c0 {3,T}
 """,
@@ -3368,7 +3367,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_hcp_hollow",
+    # site="111_hcp_hollow",
 )
 
 entry(
@@ -3377,7 +3376,7 @@ entry(
     molecule =
 """
 1 O u0 p2 c0 {3,D}
-2 C u0 p0 c0 {3,D} {4,D}
+2 C u0 p0 c0 s"111_hcp_hollow" {3,D} {4,D}
 3 C u0 p0 c0 {1,D} {2,D}
 4 X u0 p0 c0 {2,D}
 """,
@@ -3400,7 +3399,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_hcp_hollow", # is this hcp? or was it specifically relaxed for hcp
+    # site="111_hcp_hollow", # is this hcp? or was it specifically relaxed for hcp
 )
 
 entry(
@@ -3411,7 +3410,7 @@ entry(
 1 O u0 p2 c0 {4,D}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 3 C u0 p0 c0 {2,S} {7,S} {8,S} {9,S}
-4 C u0 p0 c0 {1,D} {2,S} {10,S}
+4 C u0 p0 c0 s"111_top" {1,D} {2,S} {10,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {3,S}
@@ -3440,7 +3439,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -3457,7 +3456,7 @@ entry(
 7 H u0 p0 c0 {3,S}
 8 H u0 p0 c0 {3,S}
 9 H u0 p0 c0 {1,S}
-10 X u0 p0 c0
+10 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -3480,7 +3479,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -3489,7 +3488,7 @@ entry(
     molecule =
 """
 1 O u0 p2 c0 {2,S} {8,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {9,S}
+2 C u0 p0 c0 s"111_top" {1,S} {3,S} {4,S} {9,S}
 3 C u0 p0 c0 {2,S} {5,S} {6,S} {7,S}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {3,S}
@@ -3519,7 +3518,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -3529,7 +3528,7 @@ entry(
 """
 1 O u0 p2 c0 {3,S} {7,S}
 2 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {2,S} {8,D}
+3 C u0 p0 c0 s"111_top" {1,S} {2,S} {8,D}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
@@ -3557,7 +3556,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -3642,7 +3641,7 @@ entry(
 """
 1 C u0 p0 c0 {3,S} {4,S} {5,S} {6,S}
 2 C u0 p0 c0 {3,S} {7,S} {8,S} {9,S}
-3 C u0 p0 c0 {1,S} {2,S} {10,D}
+3 C u0 p0 c0 s"111_bridge" {1,S} {2,S} {10,D}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {1,S}
@@ -3670,7 +3669,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_bridge",
+    # site="111_bridge",
 )
 
 entry(
@@ -3685,7 +3684,7 @@ entry(
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {3,S}
-8 X u0 p0 c0
+8 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo=NASA(
         polynomials=[
@@ -3708,7 +3707,7 @@ entry(
     """,
     metal="Pt",
     facet="111",
-    site="111_top_vdw", 
+    # site="111_top_vdw", 
 )
 
 entry(
@@ -3722,7 +3721,7 @@ entry(
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 6 H u0 p0 c0 {2,S}
-7 X u0 p0 c0
+7 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo = NASA(
     polynomials = [
@@ -3743,7 +3742,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -3795,7 +3794,7 @@ entry(
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {3,S}
 7 H u0 p0 c0 {3,S}
-8 X u0 p0 c0
+8 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo = NASA(
     polynomials = [
@@ -3816,7 +3815,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 
@@ -3831,7 +3830,7 @@ entry(
 4 C u0 p0 c0 {1,S} {2,S} {3,D}
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
-7 X u0 p0 c0
+7 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo = NASA(
         polynomials = [
@@ -3852,7 +3851,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -3930,8 +3929,8 @@ entry(
     molecule =
 """
 1 C u0 p0 c0 {2,D} {3,S} {4,S}
-2 C u0 p0 c0 {1,D} {5,S} {6,S}
-3 C u0 p0 c0 {1,S} {7,T}
+2 C u0 p0 c0 s"111_top" {1,D} {5,S} {6,S}
+3 C u0 p0 c0 s"111_fcc_hollow" {1,S} {7,T}
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {2,S}
 6 X u0 p0 c0 {2,S}
@@ -3954,7 +3953,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:('C',"111_top"), 2:('C',"111_fcc_hollow")},
+    # site={1:('C',"111_top"), 2:('C',"111_fcc_hollow")},
 )
 
 entry(
@@ -4068,7 +4067,7 @@ entry(
     molecule =
 """
 1 O u0 p2 c0 {3,D}
-2 C u0 p0 c0 {3,S} {4,S} {5,S} {7,S}
+2 C u0 p0 c0 s"111_top" {3,S} {4,S} {5,S} {7,S}
 3 C u0 p0 c0 {1,D} {2,S} {6,S}
 4 H u0 p0 c0 {2,S}
 5 H u0 p0 c0 {2,S}
@@ -4094,7 +4093,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -4249,7 +4248,7 @@ entry(
 7 H u0 p0 c0 {3,S}
 8 H u0 p0 c0 {3,S}
 9 H u0 p0 c0 {2,S}
-10 X u0 p0 c0 
+10 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo = NASA(
         polynomials = [
@@ -4270,7 +4269,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
@@ -4312,9 +4311,9 @@ entry(
     label = "XCHXCHXCH",
     molecule =
 """
-1 C u0 p0 c0 {7,D} {2,S} {4,S}
-2 C u0 p0 c0 {8,S} {1,S} {3,S} {5,S}
-3 C u0 p0 c0 {9,D} {2,S} {6,S}
+1 C u0 p0 c0 s"111_bridge" {7,D} {2,S} {4,S}
+2 C u0 p0 c0 s"111_top" {8,S} {1,S} {3,S} {5,S}
+3 C u0 p0 c0 s"111_bridge" {9,D} {2,S} {6,S}
 4 H u0 p0 c0 {1,S} 
 5 H u0 p0 c0 {2,S} 
 6 H u0 p0 c0 {3,S} 
@@ -4339,7 +4338,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:('C',"111_bridge"), 2:('C',"111_top"), 3:('C',"111_bridge")},
+    # site={1:('C',"111_bridge"), 2:('C',"111_top"), 3:('C',"111_bridge")},
 )
 
 entry(
@@ -4347,9 +4346,9 @@ entry(
     label = "XCHCHXCH",
     molecule =
 """
-1 C u0 p0 c0 {7,D} {2,S} {4,S}
+1 C u0 p0 c0 s"111_top" {7,D} {2,S} {4,S}
 2 C u0 p0 c0 {1,S} {3,D} {5,S}
-3 C u0 p0 c0 {8,S} {2,D} {6,S}
+3 C u0 p0 c0 s"111_top" {8,S} {2,D} {6,S}
 4 H u0 p0 c0 {1,S} 
 5 H u0 p0 c0 {2,S} 
 6 H u0 p0 c0 {3,S} 
@@ -4373,7 +4372,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:('C',"111_top"), 2:('C',"111_top")},
+    # site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -4454,7 +4453,7 @@ entry(
     label = "XOCHCH2",
     molecule =
 """
-1 O u0 p2 c0 {2,S} {7,S}
+1 O u0 p2 c0 s"111_top" {2,S} {7,S}
 2 C u0 p0 c0 {1,S} {3,D} {4,S}
 3 C u0 p0 c0 {2,D} {5,S} {6,S}
 4 H u0 p0 c0 {2,S}
@@ -4479,7 +4478,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top",
+    # site="111_top",
 )
 
 entry(
@@ -4692,8 +4691,8 @@ entry(
     label = "XCH2XCCH2",
     molecule =
 """
-1 C u0 p0 c0 {2,S} {8,S} {4,S} {5,S}
-2 C u0 p0 c0 {1,S} {9,S} {3,D}
+1 C u0 p0 c0 s"111_top" {2,S} {8,S} {4,S} {5,S}
+2 C u0 p0 c0 s"111_top" {1,S} {9,S} {3,D}
 3 C u0 p0 c0 {2,D} {6,S} {7,S} 
 4 H u0 p0 c0 {1,S}
 5 H u0 p0 c0 {1,S}
@@ -4719,7 +4718,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:('C',"111_top"), 2:('C',"111_top")},
+    # site={1:('C',"111_top"), 2:('C',"111_top")},
 )
 
 entry(
@@ -4872,9 +4871,9 @@ entry(
     label = "XCXCHXC",
     molecule =
 """
-1 C u0 p0 c0 {5,T} {2,S}
-2 C u0 p0 c0 {1,S} {3,S} {4,S} {6,S}
-3 C u0 p0 c0 {2,S} {7,T}
+1 C u0 p0 c0 s"111_fcc_hollow" {5,T} {2,S}
+2 C u0 p0 c0 s"111_top" {1,S} {3,S} {4,S} {6,S}
+3 C u0 p0 c0 s"111_fcc_hollow" {2,S} {7,T}
 4 H u0 p0 c0 {2,S}
 5 X u0 p0 c0 {1,T}
 6 X u0 p0 c0 {2,S}
@@ -4897,7 +4896,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site={1:('C',"111_fcc_hollow"), 2:('C',"111_top"), 3:('C',"111_fcc_hollow")},
+    # site={1:('C',"111_fcc_hollow"), 2:('C',"111_top"), 3:('C',"111_fcc_hollow")},
 )
 
 
@@ -5045,7 +5044,7 @@ entry(
 5 H u0 p0 c0 {1,S}
 6 H u0 p0 c0 {2,S}
 7 H u0 p0 c0 {3,S}
-8 X u0 p0 c0 
+8 X u0 p0 c0 s"111_top_vdw"
 """,
     thermo = NASA(
         polynomials = [
@@ -5066,7 +5065,7 @@ entry(
 """,
     metal = "Pt",
     facet = "111",
-    site="111_top_vdw",
+    # site="111_top_vdw",
 )
 
 entry(
